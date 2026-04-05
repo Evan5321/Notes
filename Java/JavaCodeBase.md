@@ -157,3 +157,89 @@ public class StringBuilderDemo {
     }
 }
 ```
+
+## 5. [Calendar] Calendar类常用方法
+
+| 方法名 | 功能描述 | 代码示例 |
+| :--- | :--- | :--- |
+| `getInstance()` | 获取当前系统时间的 Calendar 单例对象 | `Calendar cal = Calendar.getInstance();` |
+| `get(int field)` | 获取指定时间字段（年 / 月 / 日 / 时 / 分 / 秒） | `int year = cal.get(Calendar.YEAR);` |
+| `set(int field, int value)` | 单独设置某个时间字段 | `cal.set(Calendar.HOUR, 10);` |
+| `set(int y, int m, int d)` | 快速设置年月日 | `cal.set(2026, 4, 5);` |
+| `add(int field, int amount)` | 时间增减运算（加 / 减天、月、年） | `cal.add(Calendar.DATE, 3);` |
+| `getTime()` | Calendar 转为 Date 对象 | `Date date = cal.getTime();` |
+| `setTime(Date date)` | 用 Date 对象赋值给 Calendar | `cal.setTime(new Date());` |
+| `getTimeInMillis()` | 获取毫秒级时间戳 | `long time = cal.getTimeInMillis();` |
+| `setTimeInMillis(long)` | 通过时间戳设置时间 | `cal.setTimeInMillis(System.currentTimeMillis());` |
+| `getActualMaximum(int)` | 获取字段最大值（当月最大天数 / 最大月份） | `int maxDay = cal.getActualMaximum(Calendar.DAY_OF_MONTH);` |
+
+```Java
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class CalendarExample {
+    public static void main(String[] args) {
+        System.out.println("完整显示日期时间：");
+        // 字符串转换日期格式
+        DateFormat fdate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String str = fdate.format(new Date());
+        System.out.println(str);
+
+        // 创建 Calendar 对象
+        Calendar calendar = Calendar.getInstance();
+        // 初始化 Calendar 对象，但并不必要，除非需要重置时间
+        calendar.setTime(new Date());
+
+        // 显示年份
+        System.out.println("年： " + calendar.get(Calendar.YEAR));
+
+        // 显示月份 (从0开始, 实际显示要加一)
+        System.out.println("月： " + calendar.get(Calendar.MONTH));
+
+
+        // 当前分钟数
+        System.out.println("分钟： " + calendar.get(Calendar.MINUTE));
+
+        // 今年的第 N 天
+        System.out.println("今年的第 " + calendar.get(Calendar.DAY_OF_YEAR) + "天");
+
+        // 本月第 N 天
+        System.out.println("本月的第 " + calendar.get(Calendar.DAY_OF_MONTH) + "天");
+
+        // 3小时以后
+        calendar.add(Calendar.HOUR_OF_DAY, 3);
+        System.out.println("三小时以后的时间： " + calendar.getTime());
+        // 格式化显示
+        str = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS")).format(calendar.getTime());
+        System.out.println(str);
+
+        // 重置 Calendar 显示当前时间
+        calendar.setTime(new Date());
+        str = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS")).format(calendar.getTime());
+        System.out.println(str);
+
+        // 创建一个 Calendar 用于比较时间
+        Calendar calendarNew = Calendar.getInstance();
+
+        // 设定为 5 小时以前，后者大，显示 -1
+        calendarNew.add(Calendar.HOUR, -5);
+        System.out.println("时间比较：" + calendarNew.compareTo(calendar));
+
+        // 设定7小时以后，前者大，显示 1
+        calendarNew.add(Calendar.HOUR, +7);
+        System.out.println("时间比较：" + calendarNew.compareTo(calendar));
+
+        // 退回 2 小时，时间相同，显示0
+        calendarNew.add(Calendar.HOUR, -2);
+        System.out.println("时间比较：" + calendarNew.compareTo(calendar));
+
+        // calendarNew创建时间点
+        System.out.println((new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS")).format(calendarNew.getTime()));
+        // calendar创建时间点
+        System.out.println((new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS")).format(calendar.getTime()));
+        System.out.println("时间比较：" + calendarNew.compareTo(calendar));
+    }
+}
+```
