@@ -5,6 +5,7 @@
 #include <string.h>
 using namespace std;
 
+
 struct   stu
 {
     char name[8];
@@ -72,7 +73,17 @@ stu* add_student(stu* head)
 int sort_cj(stu* head,int val,int style)
 {
 	stu* p = head;
-	int nid = 1;
+	int nid = 1;:class MyClass : public QObject {
+	  Q_OBJECT;
+	public:
+	
+	explicit MyClass(QObject *parent = nullptr);
+	  
+	signals:
+	
+	public slots:
+	};
+	
 	
 	while(p!=NULL)
 	{
