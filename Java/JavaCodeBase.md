@@ -337,3 +337,72 @@ public class BufferedBinaryIO {
     }
 }
 ```
+
+## 8. [HttpURL] HttpURL请求
+``` Java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class HttpUrlTest {
+    public static void main(String[] args) {
+        try {
+            //设置url
+            URL shiyanlou = new URL("https://www.lanqiao.cn");
+            //打开连接
+            HttpURLConnection urlConnection = (HttpURLConnection)shiyanlou.openConnection();
+            //设置请求方法
+            urlConnection.setRequestMethod("GET");
+            //设置连接超时时间
+            urlConnection.setConnectTimeout(1000);
+            //获取输入流
+            InputStream inputStream = urlConnection.getInputStream();
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            //打印结果
+            bufferedReader.lines().forEach(System.out::println);
+            //关闭连接
+            inputStream.close();
+            bufferedReader.close();
+            urlConnection.disconnect();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+## 9. [InetAddress] InetAddress类常用方法
+![InetAddress](image.png)
+
+```Java
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class InetAddressDemo {
+    public static void main(String[] args) {
+        try {
+            InetAddress shiyanlou = InetAddress.getByName("www.lanqiao.cn");
+            //toString 方法将输出主机名和ip地址
+            System.out.println(shiyanlou.toString());
+            //获取ip地址
+            String ip = shiyanlou.toString().split("/")[1];
+            //根据IP地址获取主机名
+            InetAddress byAddress = InetAddress.getByName(ip);
+            System.out.println("get hostname by IP address:" + byAddress.getHostName());
+            System.out.println("localhost: "+InetAddress.getLocalHost());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+```Bash
+www.lanqiao.cn/121.40.227.60
+get hostname by IP address:www.shiyanlou.com
+localhost: 90ce6f59cfd6/192.168.42.3
+```
+
+
