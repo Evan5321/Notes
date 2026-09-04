@@ -406,3 +406,132 @@ localhost: 90ce6f59cfd6/192.168.42.3
 ```
 
 
+## 10. 线程池的三种提交任务的方法
+
+三种方式：
+1. `execute(自定义Runnable类)` 无返回值
+2. `submit(Lambda Runnable)` 无返回值，可获取Future
+3. `submit(Callable)` 有返回值，能拿到执行结果
+
+```java
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+// 方式1：自定义Runnable任务类
+class MyTask implements Runnable {
+    private final int taskId;
+
+    public MyTask(int taskId) {
+        this.taskId = taskId;
+    }
+
+    @Override
+    public void run() {
+        System.out.println("【自定义Runnable】线程:" + Thread.currentThread().getName()
+                + "，执行任务ID：" + taskId);
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+public class PoolSubmitDemo {
+    public static void main(String[] args) throws Exception {
+        // 创建固定2线程池
+        ExecutorService pool = Executors.newFixedThreadPool(2);
+
+        // ========== 方式1：execute 提交自定义Runnable对象（无返回值） ==========
+        for (int i = 1; i <= 2; i++) {
+            pool.execute(new MyTask(i));
+        }
+
+        // ========== 方式2：submit 提交Lambda Runnable（无返回，可获取Future） ==========
+        Future<?> future1 = pool.submit(() -> {
+            System.out.println("【Lambda Runnable】线程:" + Thread.currentThread().getName() + " 执行");
+            Thread.sleep(300);
+        });
+        System.out.println("Lambda任务是否完成：" + future1.isDone());
+
+        // ========== 方式3：submit 提交Callable（带返回值） ==========
+        Callable<Integer> callTask = () -> {
+            int sum = 0;
+            for (int i = 1; i <= 10; i++) sum += i;
+            Thread.sleep(300);
+            return sum;
+        };
+        Future<Integer> future2 = pool.submit(callTask);
+        // get()阻塞获取返回结果
+        Integer result = future2.get();
+        System.out.println("【Callable返回值】1~10求和 = " + result);
+
+
+        // 关闭线程池
+        pool.shutdown();
+    }
+}
+```
+
+三种方式区分总结
+1. **`pool.execute(new MyTask(id))`**
+   - 参数：实现 `Runnable` 的自定义类
+   - 无返回值，无法获取任务结果
+   - 适合需要复用、携带多个参数的复杂任务
+
+2. **`pool.submit(() -> { ... })`**
+   - 参数：Lambda 表达式（匿名Runnable）
+   - 返回 `Future<?>`，可判断任务是否完成，但拿不到业务返回值
+   - 适合简单、一次性短任务，代码简洁
+
+3. **`pool.submit(new Callable<>(){})`**
+   - 参数：`Callable` 对象
+   - 返回 `Future<T>`，调用 `.get()` 能拿到线程执行返回的数据
+   - 适合需要计算、需要获取执行结果的场景
+
+## 11. Future的两种使用方法
+```Java
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+public class FutureDemo {
+    public static void main(String[] args) throws Exception {
+        // 创建单线程池
+        ExecutorService pool = Executors.newSingleThreadExecutor();
+
+        // 定义带返回值的Callable任务
+        Callable<Integer> task = () -> {
+            System.out.println("子线程开始计算...");
+            Thread.sleep(2000); // 模拟耗时计算2秒
+            return 1 + 99;
+        };
+
+        // 提交任务，立刻返回Future凭证，主线程不会阻塞
+        Future<Integer> future = pool.submit(task);
+
+        System.out.println("主线程继续执行其他业务，不阻塞");
+
+        // 1. isDone()：非阻塞，轮询判断任务是否完成
+        while (!future.isDone()) {
+            System.out.println("任务还未执行完毕，等待中...");
+            Thread.sleep(300);
+        }
+        System.out.println("检测到任务执行完成，准备获取结果");
+
+        // 2. get()：阻塞方法，获取子线程返回值
+        Integer result = future.get();
+        System.out.println("子线程计算结果：" + result);
+
+        pool.shutdown();
+    }
+}
+```
+### 运行逻辑说明
+1. `pool.submit(task)` 提交任务后马上得到 `Future`，主线程可以继续往下走；
+2. `future.isDone()` 不会阻塞线程，只是单纯查询任务状态，返回 `true/false`；
+3. 循环持续检测，直到任务跑完跳出循环；
+4. `future.get()` 阻塞获取返回值，此时任务已经完成，会立刻拿到结果，不会长时间等待。
