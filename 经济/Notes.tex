@@ -1,0 +1,86 @@
+\documentclass[cn,hazy,blue,14pt,screen]{elegantnote}
+\title{}
+\author{}
+\usepackage{array}
+\usepackage{amsmath,booktabs}
+\usepackage{amssymb}
+
+\begin{document}
+\maketitle
+
+\section{消费者均衡}
+
+$\begin{cases}
+    P_x \cdot x + P_y \cdot y = I \,\, (I=Income)\\
+    U(x,y) = x^{\alpha} \cdot y^{\beta}
+\end{cases} $
+
+$ \frac{MU_x}{MU_y} = \frac{P_x}{P_y} (1)$
+$P_x \cdot x + P_y \cdot y = I (2)$
+
+$ MU_x = \frac{\partial U(x,y)}{\partial x} = \alpha x^{\alpha - 1}y^{\beta} $
+$ MU_y = \frac{\partial U(x,y)}{\partial y} = \beta x^{\alpha}y^{\beta - 1} $
+
+$\Rightarrow \frac{MU_x}{MU_y} =  \frac{\alpha x^{\alpha-1} y^{\beta}}{\beta x^{\alpha}y^{\beta - 1}} = \frac{\alpha y}{\beta x} $
+
+$\Rightarrow \frac{\alpha y}{\beta x} = \frac{P_x}{P_y} $
+
+$\Rightarrow P_x \cdot x = P_y \cdot y \cdot \frac{\alpha}{\beta} $
+
+$\Rightarrow \frac{\alpha}{\beta}P_y\cdot y + P_y \cdot y = I $
+
+$\Rightarrow (1+\frac{\alpha}{\beta})P_y\cdot y  = I $
+
+$\Rightarrow y= \frac{I}{P_y} \cdot \frac{\beta}{\alpha+\beta}$
+
+同理：
+
+$\Rightarrow (1+\frac{\beta}{\alpha})P_x\cdot x  = I $
+
+$\Rightarrow x= \frac{I}{P_x} \cdot \frac{\alpha}{\alpha+\beta}$
+
+
+$MRS_{1,2} = \left. -\frac{\Delta Q_2}{\Delta Q_1} \right|_{U不变}$
+
+$\text{对于任意一条无差异曲线：}$
+$$U = (Q_1, Q_2) $$ 
+$$dU = \frac{\partial U}{\partial Q_1}dQ_1 + \frac{\partial U}{\partial Q_2}dQ_2$$
+$$ 0 = MU_1 dQ_1 + MU_2 dQ_2 $$
+$$ MRS = -\frac{dQ_2}{dQ_1} = -\frac{MU_1}{MU_2} $$
+
+\subsection{Example 1}
+
+Given utility function $U = X^{0.5}Y^{0.5}$, income $I = 80$ and $P_x = 2$, $P_y =4$.
+
+Question 1: What is the maximum utility quantity of goods $X$ and $Y$?
+
+
+Question 2: What is the maximum utility $U$?
+
+
+Answer(Version 1):
+$$U = X^{0.5}Y^{0.5}$$
+$$MU_x = \frac{\partial U(x,y)}{\partial x} = 0.5X^{-0.5}Y^{0.5}$$
+$$MU_y = \frac{\partial U(x,y)}{\partial y} = 0.5X^{0.5}Y^{-0.5}$$
+$$\text{Condition: } \frac{MU_x}{P_x} = \frac{MU_y}{P_y} \Rightarrow \frac{Y}{2} = \frac{X}{4}$$
+$$ \text{Buget:} P_x \cdot x + P_y \cdot y = I$$
+$$ 2X+4Y=80$$
+$$\Rightarrow 2X + 4 \cdot \frac{1}{2} X =80$$
+$$ \Rightarrow X=20 \,\, Y=10$$
+$$U_{max} = \sqrt{20\times10} = \sqrt{200} = 10\sqrt{2}$$
+
+
+Answer(Version 2):
+
+
+$$\begin{cases}
+    X= \frac{I}{P_x} \cdot \frac{\alpha}{\alpha+\beta} \\
+    Y= \frac{I}{P_y} \cdot \frac{\beta}{\alpha+\beta}   
+\end{cases}$$
+
+$$X = \frac{80}{2} \cdot \frac{0.5}{0.5+0.5} = 20$$
+$$Y = \frac{80}{4} \cdot \frac{0.5}{0.5+0.5} = 10$$
+
+$$U_{max} = \sqrt{20\times10} = \sqrt{200} = 10\sqrt{2}$$
+
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass[cn,hazy,blue,14pt,screen]{elegantnote}
+\title{极限的定义和证明题型}
+\author{黎昀霖}
+\usepackage{array}
+\usepackage{amsmath,booktabs}
+\usepackage{amssymb}
+
+\begin{document}
+\maketitle
+
+\section{数列的极限}
+
+$\forall \varepsilon>0, \exists N\in Z^{+}$ ,当$n>N$时总有 $| x_{n} - A |< \varepsilon$,则有$\lim\limits_{n \to \infty} x_n = A$.
+
+\subsection{数列极限证明的例题}
+1. $ \lim\limits_{n \to \infty} (\sqrt{n+1}-\sqrt{n}) =0 $
+$$ \because \sqrt{n+1} - \sqrt{n} = \frac{1}{\sqrt{n+1} + \sqrt{n}}  $$
+$$\forall \varepsilon >0 \text{,要使} |\sqrt{n+1} - \sqrt{n} -0 | < \varepsilon $$
+$$\text{只需} \frac{1}{\sqrt{n+1} + \sqrt{n}} < \frac{1}{2\sqrt{n}} < \frac{1}{\sqrt{n}} < \varepsilon$$
+$$\text{即} n>\frac{1}{\varepsilon^{2}} $$
+$$\text{取} N=[\frac{1}{\varepsilon^{2}}]$$
+$$\text{则当} n>N\text{时} |\sqrt{n+1} - \sqrt{n} -0 | < \varepsilon$$
+$$\text{故} \lim\limits_{n \to \infty} (\sqrt{n+1} - \sqrt{n}) = 0 \,\,QED$$
+
+\section{函数的极限}
+
+$ \forall $
+\end{document}
