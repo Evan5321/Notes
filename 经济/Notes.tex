@@ -8,7 +8,7 @@
 \begin{document}
 \maketitle
 
-\section{消费者均衡}
+\section{消费者均衡公式推导}
 
 $\begin{cases}
     P_x \cdot x + P_y \cdot y = I \,\, (I=Income)\\
@@ -40,13 +40,7 @@ $\Rightarrow (1+\frac{\beta}{\alpha})P_x\cdot x  = I $
 $\Rightarrow x= \frac{I}{P_x} \cdot \frac{\alpha}{\alpha+\beta}$
 
 
-$MRS_{1,2} = \left. -\frac{\Delta Q_2}{\Delta Q_1} \right|_{U不变}$
-
-$\text{对于任意一条无差异曲线：}$
-$$U = (Q_1, Q_2) $$ 
-$$dU = \frac{\partial U}{\partial Q_1}dQ_1 + \frac{\partial U}{\partial Q_2}dQ_2$$
-$$ 0 = MU_1 dQ_1 + MU_2 dQ_2 $$
-$$ MRS = -\frac{dQ_2}{dQ_1} = -\frac{MU_1}{MU_2} $$
+$MRS_{1,2} = \left. -\frac{\Delta Q_2}{\Delta Q_1} \right|_{U\text{不变}}$
 
 \subsection{Example 1}
 
@@ -63,7 +57,7 @@ $$U = X^{0.5}Y^{0.5}$$
 $$MU_x = \frac{\partial U(x,y)}{\partial x} = 0.5X^{-0.5}Y^{0.5}$$
 $$MU_y = \frac{\partial U(x,y)}{\partial y} = 0.5X^{0.5}Y^{-0.5}$$
 $$\text{Condition: } \frac{MU_x}{P_x} = \frac{MU_y}{P_y} \Rightarrow \frac{Y}{2} = \frac{X}{4}$$
-$$ \text{Buget:} P_x \cdot x + P_y \cdot y = I$$
+$$ \text{Budget:} P_x \cdot x + P_y \cdot y = I$$
 $$ 2X+4Y=80$$
 $$\Rightarrow 2X + 4 \cdot \frac{1}{2} X =80$$
 $$ \Rightarrow X=20 \,\, Y=10$$
@@ -82,5 +76,135 @@ $$X = \frac{80}{2} \cdot \frac{0.5}{0.5+0.5} = 20$$
 $$Y = \frac{80}{4} \cdot \frac{0.5}{0.5+0.5} = 10$$
 
 $$U_{max} = \sqrt{20\times10} = \sqrt{200} = 10\sqrt{2}$$
+
+
+\section{最优消费组合类型题目}
+
+\subsection{柯布-道格拉斯函数 Cobb‑Douglas}
+形如$U = A X^{\alpha}Y^{\beta}, \alpha>0, \beta>0 $ \\
+边际效用:$MU_X = \alpha X^{\alpha-1} Y^{\beta}, MU_Y = \beta X^{\alpha}Y^{\beta -1}$ \\
+均衡条件:$\frac{MU_X}{MU_Y} = \frac{P_x}{P_y}$ 或者写为 $\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$\\
+
+\textbf{Example1:}
+消费者的效用函数为$U=X^{0.5}Y^{0.5}$，收入为120元，$P_X=3$，$P_Y=6$。最优消费组合是：
+
+\textbf{解：}
+
+\[
+U = X^{0.5}Y^{0.5}
+\]
+
+\[
+MU_X = \frac{\partial U}{\partial X} = 0.5 X^{-0.5}Y^{0.5},\qquad
+MU_Y = \frac{\partial U}{\partial Y} = 0.5 X^{0.5}Y^{-0.5}
+\]
+
+最优条件为
+\[
+\frac{MU_X}{MU_Y} = \frac{P_X}{P_Y}
+\]
+
+代入得
+\[
+\frac{0.5 X^{-0.5}Y^{0.5}}{0.5 X^{0.5}Y^{-0.5}} = \frac{Y}{X} = \frac{3}{6} = \frac12
+\]
+
+故
+\[
+X = 2Y
+\]
+
+预算约束为
+\[
+P_X X + P_Y Y = I
+\]
+\[
+3X + 6Y = 120
+\]
+
+把 $X=2Y$ 代入：
+\[
+3(2Y)+6Y=120 \Rightarrow 12Y=120 \Rightarrow Y=10
+\]
+\[
+X=2Y=20
+\]
+
+因此最优消费组合为
+\[
+X^*=20,\qquad Y^*=10
+\]
+
+验证：
+\[
+3\times 20 + 6\times 10 = 60+60 = 120
+\]
+
+故该组合刚好满足预算约束，且为最优消费组合。
+
+\[
+U_{\max}=20^{0.5}10^{0.5}=\sqrt{200}=10\sqrt{2}
+\]
+
+\subsection{完全替代品 Perfect Subsititutites}
+$ U =aX+bY, a>0,b>0$\\
+边际效用:$ MU_X = a, MU_Y = b$ \\
+边际替代率:$ MRS_{XY} = \frac{MU_X}{MU_Y} = \frac{a}{b}$ \\
+无差异曲线：直线\\
+均衡规则：\\
+1. $\frac{MU_X}{P_X} > \frac{MU_Y}{P_Y}$:全部买$X$，$Y=0$.\\
+2. $\frac{MU_X}{P_X} < \frac{MU_Y}{P_Y}$:全部买$Y$，$X=0$.\\
+3. $\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$:任意组合都是最优的，$P_x \cdot x + P_y \cdot y = I$.\\
+\textbf{对于完全替代品不能直接用$\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$解方程，否则会出现无限多组解。}
+
+\textbf{Example 1:}某消费者的效用函数为 $U=2X+Y$，收入为120元，$P_X=4$，$P_Y=3$。其最优消费组合是：\\
+对于完全替代品，比较的是
+\[
+\frac{MU_X}{P_X} \quad \text{和} \quad \frac{MU_Y}{P_Y}
+\]
+
+\[
+MU_X = 2,\qquad MU_Y = 1
+\]
+\[
+\frac{MU_X}{P_X} = \frac{2}{4} = 0.5,\qquad \frac{MU_Y}{P_Y} = \frac{1}{3} \approx 0.3333
+\]
+\[
+\frac{MU_X}{P_X} > \frac{MU_Y}{P_Y}
+\]
+因此，每一元钱用于购买 $X$ 能带来更高的效用，所以消费者会把全部收入用于购买 $X$，即 $Y=0$。
+
+预算约束为
+\[
+P_X X + P_Y Y = 120
+\]
+\[
+4X + 3Y = 120
+\]
+当 $Y=0$ 时，
+\[
+4X = 120 \Rightarrow X = 30,\quad Y = 0
+\]
+
+所以最优消费组合为 $X^*=30,\ Y^*=0$。
+
+
+\subsection{完全互补品（里昂惕夫）Leontief}
+$U = min\{aX, bY\}, a>0, b>0$ \\
+例子： $U = min\{2X,Y\}$:代表1单位的$Y$可以和2单位的$X$互补，形成1个单位的效用。\\
+无差异曲线：L型，拐角处效用最大\\
+均衡条件：$aX = bY$（即拐角处条件），并且满足预算约束 $P_x \cdot x + P_y \cdot y = I$（不能求导）。\\
+
+\textbf{Example1:}某消费者的效用函数为$U=min\{X,2Y\}$，收入为100元，$P_X=4$，$P_Y=2$。最优消费组合是：\\
+完全互补品的最优比例满足$X=2Y$。代入$4X+2Y=100$，得到$Y=10$、$X=20$。
+
+
+\section{备用}
+$\text{对于任意一条无差异曲线：}$
+$$U = (Q_1, Q_2) $$ 
+$$dU = \frac{\partial U}{\partial Q_1}dQ_1 + \frac{\partial U}{\partial Q_2}dQ_2$$
+$$ 0 = MU_1 dQ_1 + MU_2 dQ_2 $$
+$$ MRS = -\frac{dQ_2}{dQ_1} = -\frac{MU_1}{MU_2} $$
+
 
 \end{document}

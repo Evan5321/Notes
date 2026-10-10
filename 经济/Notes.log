@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.9.24)  30 SEP 2026 20:37
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.9.24)  8 OCT 2026 13:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1625,30 +1625,40 @@ LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
  [1
 
 ]
-Missing character: There is no 不 in font cmr10!
-Missing character: There is no 变 in font cmr10!
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 45.
+(Font)              scaled to size 7.0pt on input line 43.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 51.
-[2] [3] [4] (Notes.aux)
+(Font)              scaled to size 17.28pt on input line 45.
+ [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
+
+ []
+
+LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 88.
+[4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
+
+ []
+
+[7] [8] (Notes.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026/08/21>
  ***********
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 894A37DAF7DB7F26B77823F910231FA5;188.
+(rerunfilecheck)             Checksum: 15C083A7A54BF59FD6CF84A42E672325;1002.
 Package logreq Info: Writing requests to 'Notes.run.xml'.
 \openout1 = `Notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38384 strings out of 402987
- 791807 string characters out of 5453906
+ 38534 strings out of 402987
+ 800866 string characters out of 5453906
  1695670 words of memory out of 5000000
- 66552 multiletter control sequences out of 15000+600000
- 635191 words of font info for 106 fonts, out of 8000000 for 9000
+ 66699 multiletter control sequences out of 15000+600000
+ 635215 words of font info for 109 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,127p,719b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Notes.pdf (4 pages).
+Output written on Notes.pdf (8 pages).
