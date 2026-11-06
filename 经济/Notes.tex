@@ -4,43 +4,53 @@
 \usepackage{array}
 \usepackage{amsmath,booktabs}
 \usepackage{amssymb}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\graphicspath{{fig/}}
+\pgfplotsset{compat=1.17}
 
 \begin{document}
 \maketitle
 
-\section{消费者均衡公式推导}
+\section{需求价格弹性}
+\subsection{需求价格点弹性}
+总公式：
+$$E_p = - \frac{\Delta Q / Q}{\Delta P / P} $$
+弧弹性公式：
+$$E_p = - \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}} = - \frac{(Q_2 -Q_1)/(Q_2+Q_1)}{(P_2 -P_1)/(P_2+P_1)} $$
+\section{【二级结论】消费者均衡公式推导}
 
-$\begin{cases}
+$$\begin{cases}
     P_x \cdot x + P_y \cdot y = I \,\, (I=Income)\\
     U(x,y) = x^{\alpha} \cdot y^{\beta}
-\end{cases} $
+\end{cases} $$
 
-$ \frac{MU_x}{MU_y} = \frac{P_x}{P_y} (1)$
-$P_x \cdot x + P_y \cdot y = I (2)$
+$$ \frac{MU_x}{MU_y} = \frac{P_x}{P_y} (1)$$
+$$P_x \cdot x + P_y \cdot y = I (2)$$
 
-$ MU_x = \frac{\partial U(x,y)}{\partial x} = \alpha x^{\alpha - 1}y^{\beta} $
-$ MU_y = \frac{\partial U(x,y)}{\partial y} = \beta x^{\alpha}y^{\beta - 1} $
+$$ MU_x = \frac{\partial U(x,y)}{\partial x} = \alpha x^{\alpha - 1}y^{\beta} $$
+$$ MU_y = \frac{\partial U(x,y)}{\partial y} = \beta x^{\alpha}y^{\beta - 1} $$
 
-$\Rightarrow \frac{MU_x}{MU_y} =  \frac{\alpha x^{\alpha-1} y^{\beta}}{\beta x^{\alpha}y^{\beta - 1}} = \frac{\alpha y}{\beta x} $
+$$\Rightarrow \frac{MU_x}{MU_y} =  \frac{\alpha x^{\alpha-1} y^{\beta}}{\beta x^{\alpha}y^{\beta - 1}} = \frac{\alpha y}{\beta x} $$
 
-$\Rightarrow \frac{\alpha y}{\beta x} = \frac{P_x}{P_y} $
+$$\Rightarrow \frac{\alpha y}{\beta x} = \frac{P_x}{P_y} $$
 
-$\Rightarrow P_x \cdot x = P_y \cdot y \cdot \frac{\alpha}{\beta} $
+$$\Rightarrow P_x \cdot x = P_y \cdot y \cdot \frac{\alpha}{\beta} $$
 
-$\Rightarrow \frac{\alpha}{\beta}P_y\cdot y + P_y \cdot y = I $
+$$\Rightarrow \frac{\alpha}{\beta}P_y\cdot y + P_y \cdot y = I $$
 
-$\Rightarrow (1+\frac{\alpha}{\beta})P_y\cdot y  = I $
+$$\Rightarrow (1+\frac{\alpha}{\beta})P_y\cdot y  = I $$
 
-$\Rightarrow y= \frac{I}{P_y} \cdot \frac{\beta}{\alpha+\beta}$
+$$\Rightarrow y= \frac{I}{P_y} \cdot \frac{\beta}{\alpha+\beta}$$
 
 同理：
 
-$\Rightarrow (1+\frac{\beta}{\alpha})P_x\cdot x  = I $
+$$\Rightarrow (1+\frac{\beta}{\alpha})P_x\cdot x  = I $$
 
-$\Rightarrow x= \frac{I}{P_x} \cdot \frac{\alpha}{\alpha+\beta}$
+$$\Rightarrow x= \frac{I}{P_x} \cdot \frac{\alpha}{\alpha+\beta}$$
 
 
-$MRS_{1,2} = \left. -\frac{\Delta Q_2}{\Delta Q_1} \right|_{U\text{不变}}$
+
 
 \subsection{Example 1}
 
@@ -90,61 +100,61 @@ $$U_{max} = \sqrt{20\times10} = \sqrt{200} = 10\sqrt{2}$$
 
 \textbf{解：}
 
-\[
+$$
 U = X^{0.5}Y^{0.5}
-\]
+$$
 
-\[
+$$
 MU_X = \frac{\partial U}{\partial X} = 0.5 X^{-0.5}Y^{0.5},\qquad
 MU_Y = \frac{\partial U}{\partial Y} = 0.5 X^{0.5}Y^{-0.5}
-\]
+$$
 
 最优条件为
-\[
+$$
 \frac{MU_X}{MU_Y} = \frac{P_X}{P_Y}
-\]
+$$
 
 代入得
-\[
+$$
 \frac{0.5 X^{-0.5}Y^{0.5}}{0.5 X^{0.5}Y^{-0.5}} = \frac{Y}{X} = \frac{3}{6} = \frac12
-\]
+$$
 
 故
-\[
+$$
 X = 2Y
-\]
+$$
 
 预算约束为
-\[
+$$
 P_X X + P_Y Y = I
-\]
-\[
+$$
+$$
 3X + 6Y = 120
-\]
+$$
 
 把 $X=2Y$ 代入：
-\[
+$$
 3(2Y)+6Y=120 \Rightarrow 12Y=120 \Rightarrow Y=10
-\]
-\[
+$$
+$$
 X=2Y=20
-\]
+$$
 
 因此最优消费组合为
-\[
+$$
 X^*=20,\qquad Y^*=10
-\]
+$$
 
 验证：
-\[
+$$
 3\times 20 + 6\times 10 = 60+60 = 120
-\]
+$$
 
 故该组合刚好满足预算约束，且为最优消费组合。
 
-\[
+$$
 U_{\max}=20^{0.5}10^{0.5}=\sqrt{200}=10\sqrt{2}
-\]
+$$
 
 \subsection{完全替代品 Perfect Subsititutites}
 $ U =aX+bY, a>0,b>0$\\
@@ -159,32 +169,32 @@ $ U =aX+bY, a>0,b>0$\\
 
 \textbf{Example 1:}某消费者的效用函数为 $U=2X+Y$，收入为120元，$P_X=4$，$P_Y=3$。其最优消费组合是：\\
 对于完全替代品，比较的是
-\[
+$$
 \frac{MU_X}{P_X} \quad \text{和} \quad \frac{MU_Y}{P_Y}
-\]
+$$
 
-\[
+$$
 MU_X = 2,\qquad MU_Y = 1
-\]
-\[
+$$
+$$
 \frac{MU_X}{P_X} = \frac{2}{4} = 0.5,\qquad \frac{MU_Y}{P_Y} = \frac{1}{3} \approx 0.3333
-\]
-\[
+$$
+$$
 \frac{MU_X}{P_X} > \frac{MU_Y}{P_Y}
-\]
+$$
 因此，每一元钱用于购买 $X$ 能带来更高的效用，所以消费者会把全部收入用于购买 $X$，即 $Y=0$。
 
 预算约束为
-\[
+$$
 P_X X + P_Y Y = 120
-\]
-\[
+$$
+$$
 4X + 3Y = 120
-\]
+$$
 当 $Y=0$ 时，
-\[
+$$
 4X = 120 \Rightarrow X = 30,\quad Y = 0
-\]
+$$
 
 所以最优消费组合为 $X^*=30,\ Y^*=0$。
 
@@ -198,8 +208,293 @@ $U = min\{aX, bY\}, a>0, b>0$ \\
 \textbf{Example1:}某消费者的效用函数为$U=min\{X,2Y\}$，收入为100元，$P_X=4$，$P_Y=2$。最优消费组合是：\\
 完全互补品的最优比例满足$X=2Y$。代入$4X+2Y=100$，得到$Y=10$、$X=20$。
 
+\subsection{其他类型}
+1. 假设$U = 50X -0.5X^{2} +100Y - Y^{2}$,总收入$I=672$,$P_X=4$.求：\\
+（1）$Y$的需求函数；\\
+（2）如果$P_Y=8$，他将购买多少$X$；\\
+
+$$MU_X = \frac{\partial U(X,Y)}{\partial X} = 50 - X$$
+$$MU_Y = \frac{\partial U(X,Y)}{\partial Y} = 100 - 2Y$$
+
+由消费者均衡的条件：
+$$\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$$
+代入得：
+$$\frac{50 - X}{4} = \frac{100 - 2Y}{P_Y}$$
+又有：
+$$P_X \cdot X + P_Y \cdot Y = I$$
+代入得：
+$$4X + P_Y \cdot Y = 672$$
+联立：
+$$\begin{cases}
+    \frac{50 - X}{4} = \frac{100 - 2Y}{P_Y} \\
+    4X + P_Y \cdot Y = 672
+\end{cases}$$
+解得：
+$$Y = \frac{872}{P_Y + 8}$$
+所以，Y的需求函数为：
+$$ Q = \frac{872}{P_Y + 8}$$
+
+当$P_Y=8时$：
+$$Y = \frac{872}{8 + 8} = 54.5$$
+$$4X + 8 \times 54.5 = 672 \Rightarrow X = $$
+
+\section{生产知识点}
+
+\subsection{三条生产曲线的关系}
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{fig/三条产量曲线.jpg}
+\end{center}
+
+\textbf{三条产量曲线上点的关系}
+\begin{enumerate}
+    \item B 点（\(L_2\)）
+TP上切线斜率最大 → \(MP_L\)到达最高点\(B'\)
+此时边际产量达到峰值，TP 增速最快，是边际报酬递增的终点。
+    \item C 点（\(L_3\)）
+从原点出发的射线与 TP 相切，射线斜率 = AP 最大值
+对应下方\(C'\)：\(MP_L=AP_L\)，AP 曲线的最高点
+    \item \begin{quote}
+        \(L<L_3\)：\(MP>AP\)，AP 上升\\
+        \(L>L_3\)：\(MP<AP\)，AP 下降\\
+        核心结论：$MP$ 穿过 $AP$ 最高点。
+    \end{quote}
+
+    \item D 点（\(L_4\)）
+TP 的最高点，此处切线水平、斜率 = 0 → \(MP_L=0\)
+\(L>L_4\)，\(MP<0\)，总产量开始下降。
+\end{enumerate}
+
+\textbf{三个生产阶段}
+
+\begin{enumerate}
+    \item 第 I 阶段：\(0<L<L_3\)（AP上升阶段）
+\(MP>AP>0\)，TP持续加速上升，AP 不断变大
+含义：劳动投入相对不足，增加工人，平均产量还在涨；厂商不会停在这里生产，继续加劳动有利可图。
+    \item 第 II  阶段：\(L_3<L<L_4\)（合理生产区间，经济区间 ✅）
+\(MP<AP\)，AP开始下降；但\(MP>0\)，TP 依然在增加，只是增速放缓
+起点：\(MP=AP\)（AP 最大）；终点：\(MP=0\)（TP 最大）
+厂商最优劳动投入一定落在这个区间，具体位置由成本收益决定。
+    \item 第 III 阶段：\(L>L_4\)
+\(MP<0\)，继续增加劳动，总产量 TP 反而下降
+人太多、拥挤内耗，绝对不合理，厂商绝不会选择这个区间。
+
+\end{enumerate}
+
+\section{生产类题目}
+
+生产类题目基础公式：
+总产量、平均产量与边际产量：
+$$ TP = f(L,K)$$
+$$ AP_L = \frac{TP}{L}$$
+$$ MP_L = \frac{\partial TP}{\partial L}$$
+
+成本约束公式：
+$$ C = wL + rK$$
+
+劳动、资本边际产量公式：
+$$ MP_L = \frac{\partial Q}{\partial L}$$
+$$ MP_K = \frac{\partial Q}{\partial K}$$
+
+生产者均衡的条件：
+$$\frac{MP_L}{w} = \frac{MP_K}{r}$$
+
+劳动对资本的边际技术替代率：
+$$ MRTS_{L,K} = -\frac{dK}{dL} = \frac{MP_L}{MP_K}$$
+
+\subsection{课堂例题1 任意产量函数}
+
+某企业只使用劳动$L$和资本$K$，二者均可调整。其生产函数为：
+$$ Q = 2\sqrt{LK}$$
+劳动价格$w=4$，资本价格$r=1$。企业计划生产40单位产品。\\
+1．求实现该产量的成本最小化要素组合，以及最低总成本。\\
+2．有人建议使用$L=5$、$K=80$。判断这一组合能否完成产量目标，并与最优方案比较成本。
+
+$$ MP_L = \frac{\partial Q}{\partial L} = \sqrt{\frac{K}{L}}$$
+$$ MP_K = \frac{\partial Q}{\partial K} = \sqrt{\frac{L}{K}}$$
+
+$$ \frac{MP_L}{MP_K} = \frac{w}{r} = \frac{4}{1}$$
+$$ \Rightarrow 4L = K$$
+
+$$ Q = 2\sqrt{LK} = 2\sqrt{L \cdot 4L} = 4L = 40 \Rightarrow L=10, K=40$$
+$$ C = wL + rK = 4L + K = 4L + 4L = 8L = 80$$
+
+\subsection{柯布道格拉斯函数-成本最小化}
+生产函数：$Q=L^{0.4}K^{0.6}$，$w=10$，$r=5$，计划产量$Q=100$。
+求：成本最小化时的$L、K$，以及最小成本。
+
+$$MP_L = \frac{\partial Q}{\partial L} = 0.4L^{0.3}K^{0.6}$$
+$$MP_K = \frac{\partial Q}{\partial K} = 0.6L^{0.4}K^{0.5}$$
+
+$$ \frac{MP_L}{MP_K} = \frac{w}{r} = \frac{10}{5} = 2$$
+$$ \Rightarrow L = 2K$$
+
+$$ Q = 100 = L^{0.4}K^{0.6} = 100 \Rightarrow L=10, K=10$$
+$$ C = wL+rK = 10 \times 10 + 5 \times 10 = 100$$
+
+\subsection{完全互补品（里昂惕夫）Leontief-成本最小化}
+完全互补（里昂惕夫）生产函数：\(\boldsymbol{Q=\min(aL,bK)}\) \\
+\(MP_L、MP_K\) 在拐点处不可导，分三段讨论。以 \(Q=\min(aL,bK)\)，最优配比 \(aL=bK\) 为分界：
+
+生产函数：$Q=\min(3L,2K)$，$w=6$，$r=3$，目标产量$Q=60$。
+求：成本最小化的$L、K$与最小成本。
+
+根据完全互补品最优比例满足$aL=bK$。$3L=2K$。
+$$ Q=60 \Rightarrow 3L = 60, 2K=60$$
+$$ \Rightarrow L=20, K=30$$
+$$C=6\times20+3\times 30 = 210$$
+$$ C = wL +rK = 6 \times L + 3 \times \frac{3}{2} L = \frac{21}{2} L = 210$$
+
+\subsection{柯布道格拉斯函数-产量最大化}
+生产函数：\(Q=L^{0.6}K^{0.5}\)，\(w=2，r=4\)，总预算成本\(C=120\)。\\
+求：产量最大化的\(L,K\)，以及最大产量。
+
+
+$$MP_L = \frac{\partial Q}{\partial L} = 0.6L^{-0.4}K^{0.5}$$
+$$MP_K = \frac{\partial Q}{\partial K} = 0.5L^{0.6}K^{-0.5}$$
+
+$$\frac{MP_L}{MP_K} = \frac{w}{r} = \frac{2}{4} = \frac{1}{2}$$
+$$\Rightarrow \frac{0.6L^{-0.4}K^{0.5}}{0.5L^{0.6}K^{-0.5}} = \frac{1.2K}{L} = \frac{1}{2} \Rightarrow L = 2.4K$$
+
+$$C = wL+rK = 2L + 4K = 120$$
+$$\Rightarrow 2(2.4K) + 4K = 120 \Rightarrow 8.8K = 120 \Rightarrow K = \frac{150}{11} \approx 13.64$$
+$$L = 2.4 \times \frac{150}{11} = \frac{360}{11} \approx 32.73$$
+
+$$Q = L^{0.6}K^{0.5} = \left(\frac{360}{11}\right)^{0.6}\left(\frac{150}{11}\right)^{0.5} \approx 29.77$$
+
+\section{完全竞争市场}
+
+\subsection{成本曲线}
+\begin{center}
+    \includegraphics[width=0.6\textwidth,height=0.7\textheight,keepaspectratio]{fig/成本曲线.jpg}
+\end{center}
+
+\subsection{完全竞争市场的基础公式}
+\textbf{成本相关}
+\begin{itemize}
+    \item TFC（总固定成本）
+    \item TVC（总可变成本）
+    \item TC（总成本）
+    $$ TC = TFC + TVC $$
+    \item MC（边际成本）
+    $$ MC = \frac{\Delta TC}{\Delta Q} = \frac{dTC}{dQ}$$
+    \item AFC（平均固定成本）
+    $$ AFC = \frac{TFC}{Q}$$
+    \item AVC（平均可变成本）
+    $$ AVC = \frac{TVC}{Q}$$
+    关系：
+    $$ AC = AVC+AFC$$
+\end{itemize}
+\textbf{利润相关}
+\begin{itemize}
+    \item $$TR = P \cdot Q$$
+    \item $$AR = \frac{TR}{Q} = P$$
+    \item $$MR = \frac{\Delta TR}{\Delta Q} = \frac{dTR}{dQ}$$
+    \item $$\pi = TR - TC$$
+    \textbf{在完全竞争市场中}
+    $$ P = MR = AR$$
+\end{itemize}
+\textbf{完全竞争市场下企业利润最大化的条件}
+
+必要条件：$ \pi'(Q) = 0$
+$$ P = MR=MC$$
+推导：
+$$ \pi = TR(Q) - TC(Q)$$
+$$ \frac{d\pi}{dQ} = \frac{dTR}{dQ} - \frac{dTC}{dQ} = MR - MC = 0$$
+$$ \Rightarrow MR = MC$$
+
+充分条件：$\pi''(Q) < 0$
+$$ \frac{dMC(Q)}{dQ} > 0$$
+
+\begin{center}
+    \includegraphics[width=0.6\textwidth,,keepaspectratio]{fig/MC斜率大于0.jpg}
+\end{center}
+
+在图像上，即利润最大化的点在A点，而不是B点。因为B点的右侧$MC<MR$继续生产能够获得利润。
+
+\textbf{完全竞争企业的亏损决策}
+\begin{enumerate}
+    \item 先判断总盈亏：\\
+    $\pi=TR-TC=(P-ATC)\cdot Q$
+    \begin{itemize}
+        \item \(P>ATC\)：盈利，\(\pi>0\)
+        \item \(P=ATC\)：盈亏平衡点，\(\pi=0\)（仍保留正常利润）
+        \item \(P<ATC\)：经济亏损
+    \end{itemize}
+    \begin{center}
+    \includegraphics[width=0.6\textwidth,,keepaspectratio]{比较总盈亏.jpg}
+    \end{center}
+    \item 再判断亏损要不要继续生产（比较$P$和$minAVC$）
+    \begin{itemize}
+        \item \(\boldsymbol{P > \min AVC}\)：继续生产
+        收益覆盖全部可变成本，还能收回一部分固定成本；停产则亏掉全部 TFC。
+        \item \(\boldsymbol{P = \min AVC}\)：关门点（停产临界点）
+        \item \(\boldsymbol{P < \min AVC}\)：停产，\(q=0\)
+        连可变成本都收不回，生产亏得比固定成本还多。
+    \end{itemize}
+    \item 亏损 $= (ATC-P)\cdot Q$ 直观理解：\\
+    $ATC$：每生产一单位产品的全部成本；\\
+    $P$：卖掉一单位能收到的钱。每卖一件，平均亏：\(\boldsymbol{ATC - P}\)；\\
+    一共卖 $Q$ 件，总亏损 = 单件平均亏损 $\times$ 产量。
+\end{enumerate}
+
+\subsection{完全竞争市场课堂例题}
+
+\begin{enumerate}
+    \item 某完全竞争企业在边际成本递增段满足$P=MC$时，产量为10，价格为8元，平均总成本为11元，平均可变成本为6元。固定成本停产后仍须支付。该企业的最优短期决策及亏损为：
+    \begin{enumerate}[label={\Alph*.},topsep=0pt,itemsep=0pt]
+        \item 停产亏损30元
+        \item 继续生产，亏损50元
+        \item 停产，亏损50元
+        \item 继续生产，亏损30元
+    \end{enumerate}
+    答案：\textbf{D}。\\
+    继续生产的亏损$=(ATC-P)Q=(11-8)\times10=30$元。固定成本$=(ATC-AVC)Q=(11-6)\times10=50$元，停产则亏损50元。因$P>AVC$，继续生产能弥补部分固定成本，亏损较小。
+
+    \item 劳动是企业唯一的可变投入，工资率$w=60$元且保持不变。在某一投入水平上，劳动边际产量$MP_L=5$，劳动平均产量$AP_L=4$。该点的边际成本$MC$和平均可变成本$AVC$分别为：
+    \begin{enumerate}[label={\Alph*.},topsep=0pt,itemsep=0pt]
+        \item MC=12元,AVC=15元
+        \item MC=60元,AVC=60元
+        \item MC=15元,AVC=12元
+        \item MC=300元,AVC=240元
+    \end{enumerate}
+    答案：\textbf{A}。\\
+    本题公式推导：\\
+    唯一可变投入：劳动；可变成本 \(\boldsymbol{VC = w\cdot L}\)
+    定义：
+    $$MP_L = \frac{\Delta Q}{\Delta L},AP_L = \frac{Q}{L}$$
+    $$MC = \frac{\Delta TC}{\Delta Q} = \frac{\Delta VC}{\Delta Q} = \frac{w\cdot \Delta L}{\Delta Q} = \frac{w}{\frac{\Delta Q}{\Delta L}} =\frac{w}{MP_L}$$
+    $$ \Rightarrow MC = \frac{60}{5} = 12$$
+    $$ AVC = \frac{VC}{Q} = \frac{w\cdot L}{Q} = \frac{w}{\frac{Q}{L}} = \frac{w}{AP_L}$$
+    $$ \Rightarrow AVC = \frac{60}{4} = 15$$
+    故：$MC=12$元，$AVC=15$元。
+
+    \item 已知某完全竞争厂商短期总成本函数：\(TC=0.1Q^3-2Q^2+15Q+10\)，市场价格 \(P=55\)，厂商利润最大化条件：\(P=MC\)。
+    求：
+    \begin{enumerate}[label={\arabic*},topsep=0pt,itemsep=0pt]
+        \item 利润最大化产量 Q；
+        \item 最大利润；
+        \item 判断该厂商是否继续生产。
+    \end{enumerate}
+    $$MC=\frac{dTC}{dQ}=0.3Q^2-4Q+15$$
+    $$\text{最大利润条件: }P=MC$$
+    $$0.3Q^2-4Q+15 = 55$$
+    $$ \Rightarrow 3Q^2-40Q-400=0$$
+    舍去负解：\(\boldsymbol{Q=20}\)
+    $$\pi=TR-TC$$
+    $$TR=P\cdot Q=55\times 20=1100$$
+    代入 \(Q=20\)：
+    $$TC=0.1\times 20^3-2\times 20^2+15\times 20+10 = 31$$
+    $$\pi=1100 - 310 = \boldsymbol{790}$$
+    判断是否生产
+    $$VC=0.1Q^3-2Q^2+15Q$$
+    $$AVC=\frac{VC}{Q}=0.1Q^2-2Q+15$$
+    代入 \(Q=20\)：
+    $$AVC=0.1\times 20^2-2\times 20+15 = 15$$
+    \(P=55>AVC=15\)，满足继续生产条件。
+\end{enumerate}
 
 \section{备用}
+$$MRS_{1,2} = \left. -\frac{\Delta Q_2}{\Delta Q_1} \right|_{U\text{不变}}$$
 $\text{对于任意一条无差异曲线：}$
 $$U = (Q_1, Q_2) $$ 
 $$dU = \frac{\partial U}{\partial Q_1}dQ_1 + \frac{\partial U}{\partial Q_2}dQ_2$$

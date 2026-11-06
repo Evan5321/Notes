@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.9.24)  8 OCT 2026 13:59
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.9.24)  6 NOV 2026 11:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1516,35 +1516,137 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-\@quotelevel=\count535
-\@quotereset=\count536
- (Notes.aux)
+(D:\Programs\MikTex\tex/latex/pgfplots\pgfplots.sty
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplots.code.tex
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks58
+\t@pgfplots@tokb=\toks59
+\t@pgfplots@tokc=\toks60
+\pgfplots@tmpa=\dimen356
+\c@pgfplots@coordindex=\count535
+\c@pgfplots@scanlineindex=\count536
+
+(D:\Programs\MikTex\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex))
+(D:\Programs\MikTex\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_load
+er.code.tex
+(D:\Programs\MikTex\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks61
+\t@pgf@tokb=\toks62
+\t@pgf@tokc=\toks63
+
+(D:\Programs\MikTex\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfu
+til-common-lists.tex))
+(D:\Programs\MikTex\tex/generic/pgfplots/util\pgfplotsutil.code.tex
+(D:\Programs\MikTex\tex/generic/pgfplots/liststructure\pgfplotsliststructure.co
+de.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots/liststructure\pgfplotsliststructureext
+.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count537
+)
+(D:\Programs\MikTex\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count538
+\t@pgfplotstable@a=\toks64
+) (D:\Programs\MikTex\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex
+) (D:\Programs\MikTex\tex/generic/pgfplots/util\pgfplotsbinary.code.tex
+(D:\Programs\MikTex\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex))
+(D:\Programs\MikTex\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.co
+de.tex
+\c@pgfplotslibrarysurf@no=\count539
+
+(D:\Programs\MikTex\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgf
+sys-xetex.def
+(D:\Programs\MikTex\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgf
+sys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count540
+))))
+(D:\Programs\MikTex\tex/generic/pgfplots/util\pgfplotscolormap.code.tex
+(D:\Programs\MikTex\tex/generic/pgfplots/util\pgfplotscolor.code.tex))
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplotsstackedplots.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplotsplothandlers.code.tex
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex)))
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplots.scaling.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplots.errorbars.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplots.markers.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplotsticks.code.tex)
+(D:\Programs\MikTex\tex/generic/pgfplots\pgfplots.paths.code.tex)
+(D:\Programs\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydec
+orations.code.tex
+(D:\Programs\MikTex\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen357
+\pgfdecoratedremainingdistance=\dimen358
+\pgfdecoratedinputsegmentcompleteddistance=\dimen359
+\pgfdecoratedinputsegmentremainingdistance=\dimen360
+\pgf@decorate@distancetomove=\dimen361
+\pgf@decorate@repeatstate=\count541
+\pgfdecorationsegmentamplitude=\dimen362
+\pgfdecorationsegmentlength=\dimen363
+)
+\tikz@lib@dec@box=\box81
+)
+(D:\Programs\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydec
+orations.pathmorphing.code.tex
+(D:\Programs\MikTex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations
+.pathmorphing.code.tex))
+(D:\Programs\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydec
+orations.pathreplacing.code.tex
+(D:\Programs\MikTex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations
+.pathreplacing.code.tex))
+(D:\Programs\MikTex\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.co
+de.tex)
+\pgfplots@numplots=\count542
+\pgfplots@xmin@reg=\dimen364
+\pgfplots@xmax@reg=\dimen365
+\pgfplots@ymin@reg=\dimen366
+\pgfplots@ymax@reg=\dimen367
+\pgfplots@zmin@reg=\dimen368
+\pgfplots@zmax@reg=\dimen369
+)
+(D:\Programs\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplo
+tmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(D:\Programs\MikTex\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+\@quotelevel=\count543
+\@quotereset=\count544
+
+(Notes.aux)
 \openout1 = `Notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
-(D:\Programs\MikTex\tex/latex/biblatex/lbx\english.lbx
+ (D:\Programs\MikTex\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: XeTeX detected.
@@ -1557,9 +1659,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Notes.bbl' not found.
 
 No file Notes.bbl.
-Package biblatex Info: Reference section=0 on input line 8.
-Package biblatex Info: Reference segment=0 on input line 8.
-Package hyperref Info: Link coloring ON on input line 8.
+Package biblatex Info: Reference section=0 on input line 12.
+Package biblatex Info: Reference segment=0 on input line 12.
+Package hyperref Info: Link coloring ON on input line 12.
 (Notes.out) (Notes.out)
 \@outlinefile=\write5
 \openout5 = `Notes.out'.
@@ -1602,63 +1704,97 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count537
+\c@lstlisting=\count545
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.18} (current compat level: 1.17).
+
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 9.
+(Font)              scaled to size 24.88pt on input line 13.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 9.
+(Font)              scaled to size 24.88pt on input line 13.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 9.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+(Font)              scaled to size 17.28pt on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+
 (D:\Programs\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+
 
 (D:\Programs\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 11.
+(Font)              scaled to size 20.74pt on input line 15.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 11.
+(Font)              scaled to size 20.74pt on input line 15.
+LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
+(Font)              scaled to size 17.28pt on input line 16.
  [1
 
-]
+] [2] [3]
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 43.
-LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 45.
- [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 84--87
+(Font)              scaled to size 7.0pt on input line 69.
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 88.
-[4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 193--197
+(Font)              scaled to size 14.4pt on input line 98.
+[5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 203--207
 
  []
 
-[7] [8] (Notes.aux)
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
+
+ []
+
+[9]
+Missing character: There is no 时 in font cmr12!
+[10]
+File: fig/三条产量曲线.jpg Graphic file (type bmp)
+<fig/三条产量曲线.jpg>
+ [11] [12]
+Missing character: There is no ✅ in font [texgyretermes-regular.otf]/OT:script=
+latn;language=dflt;mapping=tex-text;!
+[13] [14]
+Missing character: There is no 、 in font cmr12!
+[15]
+Missing character: There is no 、 in font cmr12!
+Missing character: There is no 、 in font cmr12!
+[16]
+Missing character: There is no ， in font cmr12!
+[17]
+File: fig/成本曲线.jpg Graphic file (type bmp)
+<fig/成本曲线.jpg>
+ [18] [19] [20]
+File: fig/MC斜率大于0.jpg Graphic file (type bmp)
+<fig/MC斜率大于0.jpg>
+ [21]
+File: fig/比较总盈亏.jpg Graphic file (type bmp)
+<fig/比较总盈亏.jpg>
+ [22] [23] [24] [25] [26] [27] (Notes.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026/08/21>
  ***********
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 15C083A7A54BF59FD6CF84A42E672325;1002.
+(rerunfilecheck)             Checksum: 9466AF38DB99F44437A5366F3C8A5DBB;2824.
 Package logreq Info: Writing requests to 'Notes.run.xml'.
 \openout1 = `Notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38534 strings out of 402987
- 800866 string characters out of 5453906
- 1695670 words of memory out of 5000000
- 66699 multiletter control sequences out of 15000+600000
- 635215 words of font info for 109 fonts, out of 8000000 for 9000
+ 48652 strings out of 402987
+ 1141836 string characters out of 5453906
+ 2129766 words of memory out of 5000000
+ 76674 multiletter control sequences out of 15000+600000
+ 637976 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,12n,127p,719b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,127p,747b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Notes.pdf (8 pages).
+Output written on Notes.pdf (27 pages).
