@@ -242,7 +242,7 @@ $$4X + 8 \times 54.5 = 672 \Rightarrow X = $$
 
 \subsection{三条生产曲线的关系}
 \begin{center}
-    \includegraphics[width=0.6\textwidth]{fig/三条产量曲线.jpg}
+    \includegraphics[width=0.6\textwidth]{fig/三条产量曲线.png}
 \end{center}
 
 \textbf{三条产量曲线上点的关系}
@@ -365,7 +365,7 @@ $$Q = L^{0.6}K^{0.5} = \left(\frac{360}{11}\right)^{0.6}\left(\frac{150}{11}\rig
 
 \subsection{成本曲线}
 \begin{center}
-    \includegraphics[width=0.6\textwidth,height=0.7\textheight,keepaspectratio]{fig/成本曲线.jpg}
+    \includegraphics[width=0.6\textwidth,height=0.7\textheight,keepaspectratio]{fig/成本曲线.png}
 \end{center}
 
 \subsection{完全竞争市场的基础公式}
@@ -406,7 +406,7 @@ $$ \Rightarrow MR = MC$$
 $$ \frac{dMC(Q)}{dQ} > 0$$
 
 \begin{center}
-    \includegraphics[width=0.6\textwidth,,keepaspectratio]{fig/MC斜率大于0.jpg}
+    \includegraphics[width=0.6\textwidth,,keepaspectratio]{fig/MC斜率大于0.png}
 \end{center}
 
 在图像上，即利润最大化的点在A点，而不是B点。因为B点的右侧$MC<MR$继续生产能够获得利润。
@@ -421,7 +421,7 @@ $$ \frac{dMC(Q)}{dQ} > 0$$
         \item \(P<ATC\)：经济亏损
     \end{itemize}
     \begin{center}
-    \includegraphics[width=0.6\textwidth,,keepaspectratio]{比较总盈亏.jpg}
+    \includegraphics[width=0.6\textwidth,,keepaspectratio]{比较总盈亏.png}
     \end{center}
     \item 再判断亏损要不要继续生产（比较$P$和$minAVC$）
     \begin{itemize}
@@ -492,6 +492,115 @@ $$ \frac{dMC(Q)}{dQ} > 0$$
     $$AVC=0.1\times 20^2-2\times 20+15 = 15$$
     \(P=55>AVC=15\)，满足继续生产条件。
 \end{enumerate}
+
+\section{不完全竞争市场}
+
+\subsection{垄断}
+\subsubsection{垄断企业的基本知识点}
+
+\begin{center}
+    \includegraphics[width=0.6\textwidth,height=0.7\textheight,keepaspectratio]{fig/垄断企业面临的需求曲线和收益曲线.png}
+\end{center}
+
+认为垄断企业的需求曲线是线性的，也是市场的需求函数，是向下倾斜的直线。垄断企业的需求函数写为:
+$$ P = \alpha - \beta Q$$
+由需求函数可以求出总收益函数、平均收益函数和边际收益函数：
+$$ R = PQ = (\alpha - \beta Q)Q = \alpha Q - \beta Q^2$$
+$$ AR = \frac{PQ}{Q}=  P= \alpha - \beta Q$$
+$$MR = \frac{d}{dQ}(\alpha Q-\beta Q^2) = \alpha-2\beta Q$$
+垄断企业的成本函数与完全竞争企业相同，成本函数为：
+$$ TC = TFC + TVC$$
+$$ MC = \frac{dTC}{dQ}$$
+$$AVC = \frac{TVC}{Q}$$
+
+\textbf{垄断企业的盈利/停产判断}
+\begin{itemize}
+    \item $P>AC$-->获得正经济利润
+    \item $AVC<P<AC$-->短期继续生产，亏损但可弥补部分固定成本
+    \item $P<AVC$-->短期停产
+\end{itemize}
+
+\textbf{垄断企业的短期均衡}
+\begin{center}
+    \includegraphics[width=0.6\textwidth,height=0.7\textheight,keepaspectratio]{fig/垄断企业的短期利润最大化.png}
+\end{center}
+
+垄断企业\textbf{短期利润最大化}的一阶条件为：
+$$MR = MC$$
+\subsubsection{垄断企业的例题}
+例题1：
+题目：垄断厂商需求 \(P=100-2Q\)，总成本 \(TC=Q^2+20Q\)，求利润最大化产量、价格、利润。\\
+解：
+$$TR=P\cdot Q=(100-2Q)Q=100Q-2Q^2$$
+$$MR=\dfrac{dTR}{dQ}=100-4Q$$
+$$MC=\dfrac{dTC}{dQ}=2Q+20$$
+令 \(MR=MC\)
+
+\begin{align*}
+100-4Q &= 2Q+20 \\
+6Q &= 80 \\
+Q^* &= \dfrac{40}{3}\approx 13.33
+\end{align*}
+
+代入需求：
+\(P^*=100-2\times \dfrac{40}{3}= \dfrac{220}{3}\approx 73.33\)
+算利润：
+
+\begin{align*}
+TC\left(\frac{40}{3}\right) &= \left(\frac{40}{3}\right)^2+20\cdot \frac{40}{3}\\
+\pi &= P^*Q^* - TC
+\end{align*}
+$$\boldsymbol{\pi=\dfrac{1600}{3}\approx 533.33}$$
+
+例题2：
+某垄断厂商面临需求函数：\(P=80-Q\)，总成本函数：\(TC=Q^2+40Q+100\)。\\
+（1）求利润最大化产量、价格；\\
+（2）判断该厂商短期是否应该继续生产。\\
+解
+
+
+$$TR=P\cdot Q=(80-Q)Q=80Q-Q^2$$
+$$MR=\frac{dTR}{dQ}=80-2Q$$
+
+
+$$TFC=100$$
+$$TVC=Q^2+40Q$$
+$$MC=\frac{dTC}{dQ}=2Q+40$$
+$$AVC=\frac{TVC}{Q}=Q+40$$
+
+
+令 $MR=MC$
+
+
+\begin{align*}
+80-2Q &= 2Q+40 \\
+4Q &= 40 \\
+Q^* &= 10
+\end{align*}
+
+
+$$P^*=80-10=70$$
+
+
+判断生产决策：比较 P 与 AVC
+$$AVC|_{Q=10}=10+40=50$$
+$$P^*=70 > AVC=50$$
+\subsection{垄断竞争}
+
+\subsection{寡头}
+\subsubsection{古诺模型的基本知识点}
+古诺模型假设市场上有两个寡头竞争，它们的总产量即为市场的产量：
+$$ P = \alpha - \beta (Q_1 + Q_2)$$
+其中认为成本函数如下：
+$$ TC_1 = c_1\ Q_1, \quad TC_2 = c_2\ Q_2$$
+$c$是生产一个商品的成本，那么：\\
+$$ MC_1 = c_1, \quad MC_2 = c_2$$
+古诺模型中，两个寡头的收益函数如下计算：\\
+厂商1：\\
+$$R_1 = PQ_1 = [\alpha - \beta(Q_1+Q_2)]Q_1 = \alpha Q_1 - \beta Q_1 Q_2 - \beta Q_1^2$$
+$$MR_1 = \frac{\partial R_1}{\partial Q_1} = \alpha - 2\beta Q_1 - \beta Q_2$$
+厂商2：\\
+$$R_2 = PQ_2 = [\alpha - \beta(Q_1+Q_2)]Q_2 = \alpha Q_2 - \beta Q_1 Q_2 - \beta Q_2^2$$
 
 \section{备用}
 $$MRS_{1,2} = \left. -\frac{\Delta Q_2}{\Delta Q_1} \right|_{U\text{不变}}$$

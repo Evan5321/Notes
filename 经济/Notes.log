@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.9.24)  6 NOV 2026 11:11
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.9.24)  9 NOV 2026 17:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1756,8 +1756,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--215
 [9]
 Missing character: There is no 时 in font cmr12!
 [10]
-File: fig/三条产量曲线.jpg Graphic file (type bmp)
-<fig/三条产量曲线.jpg>
+File: fig/三条产量曲线.png Graphic file (type bmp)
+<fig/三条产量曲线.png>
  [11] [12]
 Missing character: There is no ✅ in font [texgyretermes-regular.otf]/OT:script=
 latn;language=dflt;mapping=tex-text;!
@@ -1769,32 +1769,54 @@ Missing character: There is no 、 in font cmr12!
 [16]
 Missing character: There is no ， in font cmr12!
 [17]
-File: fig/成本曲线.jpg Graphic file (type bmp)
-<fig/成本曲线.jpg>
+File: fig/成本曲线.png Graphic file (type bmp)
+<fig/成本曲线.png>
  [18] [19] [20]
-File: fig/MC斜率大于0.jpg Graphic file (type bmp)
-<fig/MC斜率大于0.jpg>
+File: fig/MC斜率大于0.png Graphic file (type bmp)
+<fig/MC斜率大于0.png>
  [21]
-File: fig/比较总盈亏.jpg Graphic file (type bmp)
-<fig/比较总盈亏.jpg>
- [22] [23] [24] [25] [26] [27] (Notes.aux)
+File: fig/比较总盈亏.png Graphic file (type bmp)
+<fig/比较总盈亏.png>
+ [22] [23] [24] [25]
+File: fig/垄断企业面临的需求曲线和收益曲线.png Graphic file (type bmp)
+<fig/垄断企业面临的需求曲线和收益曲线.png>
+ [26] [27]
+File: fig/垄断企业的短期利润最大化.png Graphic file (type bmp)
+<fig/垄断企业的短期利润最大化.png>
+ [28] [29] [30] [31]
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 595--597
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--603
+
+ []
+
+[33] [34] (Notes.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026/08/21>
  ***********
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 9466AF38DB99F44437A5366F3C8A5DBB;2824.
+(rerunfilecheck)             Checksum: 4B9914BF6D039ED5FE76C84011429A6B;3582.
 Package logreq Info: Writing requests to 'Notes.run.xml'.
 \openout1 = `Notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48652 strings out of 402987
- 1141836 string characters out of 5453906
+ 48678 strings out of 402987
+ 1142481 string characters out of 5453906
  2129766 words of memory out of 5000000
- 76674 multiletter control sequences out of 15000+600000
+ 76698 multiletter control sequences out of 15000+600000
  637976 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,127p,747b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Notes.pdf (27 pages).
+Output written on Notes.pdf (34 pages).
