@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.9.24)  9 NOV 2026 17:38
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.9.24)  16 NOV 2026 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1785,38 +1785,38 @@ File: fig/垄断企业的短期利润最大化.png Graphic file (type bmp)
 <fig/垄断企业的短期利润最大化.png>
  [28] [29] [30] [31]
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 595--597
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--600
+Underfull \hbox (badness 10000) in paragraph at lines 605--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--603
+Underfull \hbox (badness 10000) in paragraph at lines 609--611
 
  []
 
-[33] [34] (Notes.aux)
+[33] [34] [35] [36] (Notes.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026/08/21>
  ***********
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 4B9914BF6D039ED5FE76C84011429A6B;3582.
+(rerunfilecheck)             Checksum: 7FF6026BAAEB976764DD32111317A508;3674.
 Package logreq Info: Writing requests to 'Notes.run.xml'.
 \openout1 = `Notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48678 strings out of 402987
- 1142481 string characters out of 5453906
+ 48704 strings out of 402987
+ 1144041 string characters out of 5453906
  2129766 words of memory out of 5000000
- 76698 multiletter control sequences out of 15000+600000
+ 76724 multiletter control sequences out of 15000+600000
  637976 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,127p,747b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Notes.pdf (34 pages).
+Output written on Notes.pdf (36 pages).

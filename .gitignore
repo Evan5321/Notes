@@ -1,0 +1,28 @@
+# LaTeX 编译中间产物（保留 PDF 成品）
+*.aux
+*.bcf
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Java
+*.class
+
+# C/C++
+*.o
+*.obj
+*.exe
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+
+# 临时草稿
+temp.md

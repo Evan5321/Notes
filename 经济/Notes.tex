@@ -589,6 +589,14 @@ $$P^*=70 > AVC=50$$
 
 \subsection{寡头}
 \subsubsection{古诺模型的基本知识点}
+
+古诺模型具有以下的基本假设：
+\begin{enumerate}
+    \item 双寡头生产同质商品，且决策的变量是产量。
+    \item 给定对手的产量固定不变，选择自身产量最大化自己的利润\textbf{（核心假设）}
+    \item 不联合、各自最大化自身利润。
+\end{enumerate}
+
 古诺模型假设市场上有两个寡头竞争，它们的总产量即为市场的产量：
 $$ P = \alpha - \beta (Q_1 + Q_2)$$
 其中认为成本函数如下：
@@ -601,6 +609,37 @@ $$R_1 = PQ_1 = [\alpha - \beta(Q_1+Q_2)]Q_1 = \alpha Q_1 - \beta Q_1 Q_2 - \beta
 $$MR_1 = \frac{\partial R_1}{\partial Q_1} = \alpha - 2\beta Q_1 - \beta Q_2$$
 厂商2：\\
 $$R_2 = PQ_2 = [\alpha - \beta(Q_1+Q_2)]Q_2 = \alpha Q_2 - \beta Q_1 Q_2 - \beta Q_2^2$$
+
+两个厂商的利润为：
+$$ \pi_1 = P \cdot Q_1 - TC_1 = (\alpha - \beta(Q_1+Q_2))Q_1 - c_1 Q_1$$
+$$ \pi_2 = P \cdot Q_2 - TC_2 = (\alpha - \beta(Q_1+Q_2))Q_2 - c_2 Q_2$$
+
+对自身产量求导，可以得到两家厂商的反应函数：
+$$Q_1 = \frac{a-c}{2b} - \frac{1}{2}Q_2 = \frac{a-c-bQ_2}{2b}$$
+$$Q_2 = \frac{a-c}{2b} - \frac{1}{2}Q_1 = \frac{a-c-bQ_1}{2b}$$
+联立两式求得古诺均衡为：
+$$Q_1^* = Q_2^* = \frac{a-c}{3b}$$
+$$Q^* = Q_1^* + Q_2^* = \frac{2(a-c)}{3b}$$
+均衡价格：
+$$P^* = a - b(Q_1^* + Q_2^*) = a - b\left[\frac{4(a-c)}{3b}\right] = \frac{a+2c}{3}$$
+均衡的利润：
+$$\pi_1^* = \pi_2^* = (P^* - c)Q_1^* = \left(\frac{a+2c}{3} - c\right)\frac{a-c}{3b} = \frac{(a-c)^2}{9b}$$
+$$\Pi^* = \frac{2(a-c)^2}{9b}$$
+
+\subsubsection{卡特尔}
+卡特尔：寡头厂商之间达成公开合谋协议，统一决策产量 / 价格，追求行业总利润最大化，而不是各自单独最大化自身利润，行为等价于一个垄断厂商。
+
+市场需求：
+$$ P = \alpha- Q, \quad Q = Q_1 + Q_2$$
+总收益：
+$$TR = P \cdot Q = (\alpha - Q)Q = \alpha Q - Q^2$$
+
+卡特尔的利润最大化条件和垄断完全一样：
+$$MR = MC$$
+
+大小关系（线性需求、对称、MC 常数）
+\[Q_{\text{卡特尔}} < Q_{\text{古诺}} < Q_{\text{完全竞争}}\]
+\[P_{\text{卡特尔}} > P_{\text{古诺}} > P_{\text{完全竞争}}\]
 
 \section{备用}
 $$MRS_{1,2} = \left. -\frac{\Delta Q_2}{\Delta Q_1} \right|_{U\text{不变}}$$
